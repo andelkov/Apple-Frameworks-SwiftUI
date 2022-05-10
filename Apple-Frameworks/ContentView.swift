@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Image(systemName: "arkit")
+                .resizable()
+                .frame(width: 90, height: 90, alignment: .center)
+            Text("ARKit")
+                .font(.title2)
+                .fontWeight(.semibold)
+                .scaledToFit()
+                .minimumScaleFactor(0.6)
+            
+        }
     }
 }
 
